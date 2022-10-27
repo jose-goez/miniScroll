@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    margin-top: 200px;
+    width: 400px;
+    height: 40px;
+    overflow: scroll;
+    border: 3px solid rgb(116, 111, 111);
+    border-radius: 4px;
+    background-color: aqua;
+    /* scroll-snap-type:initial; */
+}
+
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width:10px; /*ancho de la barra*/
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #adb3b9;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
